@@ -23,6 +23,14 @@ blur_b = blur_b.astype(np.float32)
 # we want to take the query image and kill the background
 
 sub_img = blur_q - blur_b
+# sub_img = sub_img <-65
+# plt.imshow(sub_img*q_img, cmap='gray')
+# plt.show()
 
-plt.imshow(sub_img, cmap='gray')
-plt.show()
+thresh=-50
+for i in range(5):
+	sub_img = sub_img <thresh
+	plt.imshow(sub_img*q_img, cmap='gray')
+	plt.show()
+	thresh=thresh-5
+	
