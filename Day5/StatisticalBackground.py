@@ -6,8 +6,16 @@ import matplotlib.pyplot as plt
 image_dir = '/Users/Edward/Desktop/SmolGunz/Day5/Images/'
 image = cv2.imread(image_dir+'1.jpg', 0)
 
-plt.imshow(image,cmap='gray')
-plt.show()
+
+
+
 ### Hint: a list is declared like a = [img1, img2, ...]
+
+a=[image_dir+'1.jpg',image_dir+'2.jpg',image_dir+'3.jpg',image_dir+'4.jpg',image_dir+'5.jpg',image_dir+'6.jpg',image_dir+'7.jpg',image_dir+'8.jpg',image_dir+'9.jpg',image_dir+'10.jpg',image_dir+'11.jpg']
+
+for i in a
+	plt.imshow(image,cmap='gray')
+	plt.show()
+
 ### Hint: to add stuff to a list called l use l.append(stuff)
 
