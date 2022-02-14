@@ -1,4 +1,4 @@
-# So, here's the first step towards building cool shit
+# So, here's the first step towards building cool stuff
 # We need to make it simple to communicate and share software
 
 print('1. git add .')
